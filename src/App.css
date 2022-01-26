@@ -45,7 +45,7 @@ height: 100%;
   .form-div{
     display: flex;
     flex-direction: column;
-    gap:1vw;
+    gap:5vh;
     width: 70%;
     padding-left: 10vw;
   }

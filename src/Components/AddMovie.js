@@ -50,7 +50,6 @@ function AddMovie() {
   }
   return (<form onSubmit={handleSubmit} className="form-div">
     <h2>Add a new Movie!</h2>
-    <hr />
     <TextField id="name"
       name="name"
       label="Movie Name"
@@ -59,7 +58,7 @@ function AddMovie() {
       onBlur={handleBlur}
       value={values.name}
       error={errors.name && touched.name}
-      helperText={errors.name && touched.name ? errors.name : ""} /><br /><br />
+      helperText={errors.name && touched.name ? errors.name : ""} />
     <TextField id="rating"
       name="rating"
       label="Movie Rating"
@@ -69,7 +68,7 @@ function AddMovie() {
       onBlur={handleBlur}
       value={values.rating}
       error={errors.rating && touched.rating}
-      helperText={errors.rating && touched.rating ? errors.rating : ""} /><br /><br />
+      helperText={errors.rating && touched.rating ? errors.rating : ""} />
     <TextField id="poster"
       name="poster"
       variant="filled"
@@ -78,7 +77,7 @@ function AddMovie() {
       onBlur={handleBlur}
       value={values.poster}
       error={errors.poster && touched.poster}
-      helperText={errors.poster && touched.poster ? errors.poster : ""} /><br /><br />
+      helperText={errors.poster && touched.poster ? errors.poster : ""} />
     <TextField id="summary"
       name="summary"
       label="Movie Summary"
@@ -87,7 +86,7 @@ function AddMovie() {
       onBlur={handleBlur}
       value={values.summary}
       error={errors.summary && touched.summary}
-      helperText={errors.summary && touched.summary ? errors.summary : ""} /><br /><br />
+      helperText={errors.summary && touched.summary ? errors.summary : ""} />
     <Button variant="contained" type="submit">Add Movie</Button>
   </form>);
 }
