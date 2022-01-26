@@ -4,14 +4,18 @@ import Dashboard from './Components/Dashboard';
 import AllStudents from './Components/AllStudents';
 import AddStudents from './Components/AddStudents';
 import EditStudent from './Components/EditStudent';
+import AllMovies from './Components/AllMovies';
+import AddMovie from './Components/AddMovie';
 import {
   BrowserRouter,
   Routes,
   Route
 } from "react-router-dom";
 import { useState } from 'react';
+import EditMovie from './Components/EditMovie';
 
 export const URL = 'https://61ee202dd593d20017dbac5d.mockapi.io/students/';
+export const Movie_URL='https://61ee202dd593d20017dbac5d.mockapi.io/Movies/';
 
 function App() {
 
@@ -25,6 +29,9 @@ function App() {
       <Route path='/all-students' element={<AllStudents/>}/>
       <Route path='/add-students' element={<AddStudents/>}/>
       <Route path='/edit-students/:id' element={<EditStudent/>}/>
+      <Route path='/movies' element={<AllMovies/>}/>
+      <Route path='/add-movie' element={<AddMovie/>}/>
+      <Route path='/edit-movie/:id' element={<EditMovie/>}/>
       <Route path='/' element={<Dashboard/>}/>
     </Routes>
     </div>

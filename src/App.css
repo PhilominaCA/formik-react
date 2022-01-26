@@ -7,6 +7,49 @@
   color:#000;
   font-size: large;
 }
+.movie-div{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap:50px;
+  padding: 1vw;
+  }
+
+  .movie-detail {
+    height: 72vh;
+    width: 325px;
+    padding: 0.1vw;
+    justify-content: space-evenly; 
+  }
+  .poster {
+    height: 270px;
+    width: 240px;
+    Object-fit : cover;
+  }
+  
+  .summary {
+    font-size: small;
+    padding: 0%;
+  }
+
+  .movie-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sidebar-div{
+height: 100%;
+  }
+
+  .form-div{
+    display: flex;
+    flex-direction: column;
+    gap:1vw;
+    width: 70%;
+    padding-left: 10vw;
+  }
+
 /*!
  * Start Bootstrap - SB Admin 2 v4.1.3 (https://startbootstrap.com/theme/sb-admin-2)
  * Copyright 2013-2021 Start Bootstrap
@@ -10330,7 +10373,7 @@ a:focus {
 
 .sidebar {
   width: 6.5rem;
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 .sidebar .nav-item {

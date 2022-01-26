@@ -11,26 +11,6 @@ function AllStudents() {
         getData();
     }, [])
 
-    // const getData = async () => {
-    //     await fetch(URL)
-    //         .then(response => response.json())
-    //         .then(data => setStu(data))
-    //         .catch(err => {
-    //             console.log(err);
-    //         })
-    // }
-
-    // const handleDelete = async (id) => {
-    //     await fetch(URL + id, {
-    //         method: 'DELETE'
-    //     })
-    //         .then(response => response.json)
-    //         .then(data => {
-    //             getData();
-    //         })
-    // }
-
-    //axios GET
     const getData = async () => {
         try {
             const response = await axios.get(URL);

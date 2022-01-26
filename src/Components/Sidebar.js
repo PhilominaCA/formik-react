@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from 'react-router-dom'
 function Sidebar() {
   return (
-    <div>
+    <div className="sidebar-div">
       <ul className="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
         <a className="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
           <div className="sidebar-brand-icon rotate-n-15">
@@ -21,7 +21,7 @@ function Sidebar() {
           </Link>
         </li>
         <hr className="sidebar-divider" />
-        <div className="sidebar-heading">Interface</div>
+        <div className="sidebar-heading">Student data</div>
         {/* Add Student */}
         <li className="nav-item">
           <Link to='/add-students'>
@@ -35,6 +35,24 @@ function Sidebar() {
           <Link to='/all-students'>
               <a  className="nav-link" href="#">
                 <span>All Students</span>
+              </a>
+          </Link>
+        </li>
+        <hr className="sidebar-divider" />
+        <div className="sidebar-heading">Formik Task</div>
+        {/* Add Student */}
+        <li className="nav-item">
+          <Link to='/add-movie'>
+              <a className = 'nav-link' href="#">
+                  <span>Add Movie</span>
+              </a>
+          </Link>
+        </li>
+        {/* All student */}
+        <li className="nav-item">
+          <Link to='/movies'>
+              <a  className="nav-link" href="#">
+                <span>All Movies</span>
               </a>
           </Link>
         </li>
